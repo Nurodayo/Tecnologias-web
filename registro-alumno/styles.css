@@ -54,17 +54,7 @@ header.nav a {
   padding-left: 8px;
   padding-right: 8px;
 }
-.button {
-  display: inline-block;
-  margin-top: var(--espacio);
-  padding: 12px 18px;
-  border: 0;
-  border-radius: var(--radio);
-  background: #111;
-  color: #fff;
-  font-weight: 600;
-  text-decoration: none;
-}
+
 .button:hover {
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.9);
 }
@@ -78,16 +68,38 @@ input:placeholder-shown {
 .check {
   padding: 4px;
 }
-input {
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[inputmode="numeric"] {
   width: 100%;
-  position: relative;
   padding: 4px;
-  display: inline-block;
   border-radius: var(--radio);
+  display: inline-block;
+}
+
+select {
+  width: 100%;
+  padding: 4px, 4px;
+  border-radius: var(--radio);
+  box-sizing: bord;
 }
 select {
   position: relative;
   padding: 4px;
   display: inline-block;
   border-radius: var(--radio);
+}
+.button {
+  width: 100%;
+  display: inline-block;
+  margin-top: var(--espacio);
+  padding: 12px 18px;
+  border: 0;
+  border-radius: var(--radio);
+  background: #111;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
 }
