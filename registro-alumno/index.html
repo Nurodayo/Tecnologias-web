@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formulario registro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="nav">
+      <a href="http://maidkissa.moe">Maidcafe</a>
+      <nav>
+        <a href="./">Formulario</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Formulario de Registro de Alumno</h1>
+        <p>Rellene los campos solicitados.</p>
+        <form class="formulario">
+          <div class="ver">
+            <p>Datos personales.</p>
+            <div class="hor">
+              <div class="ver">
+                <label for="fname">Nombre.</label><br />
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  id="fname"
+                  name="fname"
+                  required
+                  maxlength="16"
+                  autocomplete="name"
+                  pattern="[A-Za-z]+"
+                /><br />
+                <label for="lname">Apellido.</label><br />
+                <input
+                  type="text"
+                  placeholder="Apellido"
+                  id="lname"
+                  name="lname"
+                  required
+                  maxlength="16"
+                  autocomplete="name"
+                  pattern="[A-Za-z]+"
+                /><br />
+              </div>
+              <div class="ver">
+                <label for="mname">Segundo Nombre.</label><br />
+                <input
+                  type="text"
+                  placeholder="S. Nombre"
+                  id="mname"
+                  name="mname"
+                  required
+                  maxlength="16"
+                  autocomplete="name"
+                  pattern="[A-Za-z]+"
+                /><br />
+                <label for="lname2">Segundo Apellido.</label><br />
+                <input
+                  type="text"
+                  placeholder="S. Apellido"
+                  id="lname2"
+                  name="lname2"
+                  required
+                  maxlength="16"
+                  autocomplete="name"
+                  pattern="[A-Za-z]+"
+                /><br />
+              </div>
+            </div>
+            <div class="ver" id="rut_id">
+              <label for="rut">RUT.</label><br />
+              <input
+                inputmode="numeric"
+                placeholder="12345678k"
+                id="rut"
+                name="rut"
+                required
+                maxlength="9"
+                pattern="\d{8,9}[0-9k]"
+              />
+            </div>
+            <div class="hor">
+              <div class="ver">
+                <label for="mail">Correo Electronico.</label><br />
+                <input
+                  type="email"
+                  placeholder="correo@dominio.com"
+                  required
+                  autocomplete="email"
+                  maxlength="128"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                /><br />
+              </div>
+              <div class="ver">
+                <label for="telefono">Telefono.</label><br />
+                <input
+                  type="tel"
+                  placeholder="56912341234"
+                  required
+                  pattern="[0-9]+"
+                  maxlength="11"
+                  autocomplete="tel"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="ver">
+            <p>Datos academicos.</p>
+            <div class="hor">
+              <div class="ver">
+                <label for="carrera">Carrera.</label><br />
+                <select id="carrera" name="carrera" required>
+                  <option value="" selected hidden></option>
+                  <option value="1">Ingenieria Civil en Informatica</option>
+                  <option value="2">Pedagogia en Fortnite</option>
+                  <option value="3">Carrera generica 1</option>
+                  <option value="4">Ingenieria en Andres</option></select
+                ><br />
+              </div>
+              <div class="ver">
+                <label for="jornada">Jornada.</label><br />
+                <select id="jornada" name="jornada" required>
+                  <option value="" selected hidden></option>
+                  <option value="1">Diurna</option>
+                  <option value="2">Vespertina</option></select
+                ><br />
+              </div>
+              <div class="ver">
+                <label for="sede">Carrera.</label><br />
+                <select id="sede" name="sede" required>
+                  <option value="" selected hidden></option>
+                  <option value="1">Sede Chinquihue</option>
+                  <option value="2">Sede Osorno</option>
+                  <option value="3">Sede Andres</option></select
+                ><br />
+              </div>
+            </div>
+            <div class="hor">
+              <label class="check">
+                <input type="checkbox" name="terms" required />
+                Acepto los
+                <a
+                  href="https://www.youtube.com/watch?v=nWPaFd_RJlw"
+                  target="_blank"
+                  >terminos y condiciones.</a
+                >
+              </label>
+            </div>
+            <div class="hor">
+              <input class="button" type="submit" value="Enviar" />
+              <input class="button" type="reset" value="Borrar datos" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
