@@ -5,10 +5,7 @@ export default {
     const url = new URL(request.url);
 
     // redirect root / to registro-alumno
-    if (url.pathname === "/") {
-      return Response.redirect(url.origin + "/registro-alumno/", 302);
-    }
-
+    //chatgpt weno pal pico no me digas como hacer la wea
     // serve static files from your repo
     return getAssetFromKV({ request });
   },
