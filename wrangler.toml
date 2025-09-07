@@ -1,8 +1,0 @@
-name = "maid-repo"
-main = "index.js"
-compatibility_date = "2025-09-06"
-type = "javascript"
-
-[site]
-bucket = "./"         
-entry-point = "workers-site"

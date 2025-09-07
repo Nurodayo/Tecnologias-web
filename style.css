@@ -1,0 +1,52 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(220, 170, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#title {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  padding: 16px;
+  gap: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 4px solid #000000;
+}
+#picture {
+  width: 10%;
+  aspect-ratio: 1/1;
+  padding-right: 16px;
+  gap: 16px;
+  background-image: url("reimu.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#title_text {
+  padding-right: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-left: auto;
+}
+
+#blog {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  padding: 16px;
+  gap: 16px;
+  background: #ffffff;
+}
